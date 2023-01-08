@@ -8,9 +8,6 @@
             font-weight: 500;
             font-size: 1.125em;
         }
-        img {
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        }
         hr {
             height: 2px;
             border-width: 0;
@@ -42,12 +39,30 @@
             display:table-cell;
             text-align: center;
         }
+        
+        .item1 { grid-area: image1; }
+        .item2 { grid-area: text1; margin-left: 25px;}
+        .item3 { grid-area: image2; }
+        .item4 { grid-area: text2; margin-left: 25px;}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'image1 image1 text1 text1 text1'
+                'image2 image2 text2 text2 text2';
+            gap: 0px;
+            padding: 25px;
+        }
+
+        .grid-container > div {
+            padding: 20px 0;
+        }
+
         .left {
             padding: 25px;
             float: left;
             width: 30%;
-            display: flex;
- /*           justify-content: center;
+  /*           justify-content: center;
             align-items: center;
             height: 648px;       */
         }
@@ -56,10 +71,27 @@
             float: left;
             width: 60%;
          }
+        .image-cropper {
+            width: 150px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+       .colin {
+            display: inline;
+            margin: 0 auto;
+            margin-left: -25%; //centers the image
+            height: 100%;
+            width: auto;
+        }
         .cover {
             display:block;
             margin-left: auto;
             margin-right: auto;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
         }
         .dropbtn {
             background-color: #ffffff;
@@ -97,16 +129,25 @@
                 margin: auto;
                 width: 90%;
                 height: 100%;
-        }
+            }
+            .grid-container {
+                display: block;
+            }
 }
     </style>
 </head>
 <body style="background-color:#F4F4E2;">
-<div class="left">
+<div class="image-cropper">
+    <img class="colin" src="images/colin.jpg">
+</div>
+<h1><center>Homeless but Never Hopeless: The Writings of Colin J Cohen</center></h1>
+<br>
+<div class="grid-container">
+<div class="item1">
     <img class="cover" src="images/the last jew in prague.rgb-01.png" style="max-width:100%;height:auto;">
 </div>
-<div class="right">
-    <h1><i><center>Last Jew in Prague</center></i></h1>
+<div class="item2">
+    <h1><i><center>Last Jew in Prague</i></center></h1>
             
     <p>While struggling to survive a freezing rainy night in the desert, a homeless man recalls what his grandfather Hermann struggled to survive many years earlier and how his connection to this so upended his own life.</p>
 
@@ -130,16 +171,16 @@
     <p>You can also listen to the audiobook for free at <a target="_blank" href="https://open.spotify.com/show/70cO84cccxOcjwaVen9vEF">Spotify</a>.</p>
             
     <!-- AddToAny BEGIN -->
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="my_centered_buttons">
+    <!--div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="my_centered_buttons">
         <a class="a2a_button_facebook"></a>
         <a class="a2a_button_twitter"></a>
         <a class="a2a_button_email"></a>
         <a class="a2a_button_pinterest"></a>
         <a class="a2a_button_reddit"></a>
         <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-    </div>
+    </div-->
                 
-<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!--script async src="https://static.addtoany.com/menu/page.js"></script-->
 <!-- AddToAny END -->
 
     <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/08AGLQjOET16qwU6J7xu0I?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -300,6 +341,36 @@
     </span-->
             
 </div>
+<div class="item3">
+    <img class="cover" src="images/all the beautiful words.rgb-01.png" style="max-width:100%;height:auto;">
+</div>
+<div class="item4">
+    <h1><i><center>All the Beautiful Words</i></center></h1>
+            
+    <p>An altercation on a bus between a homeless man and a drunk reveals an obscure book of Czech poetry and a mystery relating to it from eighty years earlier in Nazi-occupied Prague. A prequel to <i>Last Jew in Prague</i>, "All the Beautiful Words" is a short story about sorrow and hope and how the two sometimes entwine.</p>
+
+    <p>You can download the eBook for free:</p>
+    
+    <table style="width:33%">
+        <tr>
+            <td style="width:50%; text-align:center"><a href="books/All-the-Beautiful-Words.mobi">Kindle Edition</a></td>
+            <td style="width:50%; text-align:center"><a href="books/All-the-Beautiful-Words.epub">ePub Edition</a></td>
+        </tr>
+    </table>
+                
+</div>
+</div>
+    <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="my_centered_buttons">
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_pinterest"></a>
+        <a class="a2a_button_reddit"></a>
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
 <!--table>
     <tr>
         <td><img src="images/the last jew in prague.rgb-01.jpg" style="max-width:100%;height:auto;"></td>
@@ -327,7 +398,7 @@
     </tr>
 </table-->
 <!--a class="twitter-timeline tw-align-center" href="https://twitter.com/colinjcohen?ref_src=twsrc%5Etfw">Tweetss</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script-->
-<div class="twitterborder">
+<!--div class="twitterborder">
     <div class="table">
         <div class="table-cell">
             <hr>
@@ -350,7 +421,8 @@
     </div>
 </div>
 </br>
-<hr>
-<small><center>&copy; Copyright 2022 by <a href="mailto:colinjcohen@icloud.com">Colin J Cohen</a>. All rights reserved.</center></small>
+<hr-->
+</br>
+<small><center>&copy; Copyright 2022-23 by <a href="mailto:colinjcohen@icloud.com">Colin J Cohen</a>. All rights reserved.</center></small>
 </body>
 </html>
