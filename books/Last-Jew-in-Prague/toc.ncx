@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="c4007a18-85d3-4a7a-b84f-43520f695cee"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:generator" content="calibre (9.7.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Last Jew in Prague</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>chapter one: a pair of nights</text>
+      </navLabel>
+      <content src="index_split_001.html"/>
+    </navPoint>
+    <navPoint id="num_2" playOrder="2" class="chapter">
+      <navLabel>
+        <text>chapter two: when a predator becomes prey</text>
+      </navLabel>
+      <content src="index_split_002.html"/>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3" class="chapter">
+      <navLabel>
+        <text>chapter three: a promise unsaid</text>
+      </navLabel>
+      <content src="index_split_003.html"/>
+    </navPoint>
+    <navPoint id="num_4" playOrder="4" class="chapter">
+      <navLabel>
+        <text>chapter four: smetana in theresienstadt</text>
+      </navLabel>
+      <content src="index_split_004.html"/>
+    </navPoint>
+    <navPoint id="num_5" playOrder="5" class="chapter">
+      <navLabel>
+        <text>chapter five: the envy of all women</text>
+      </navLabel>
+      <content src="index_split_005.html"/>
+    </navPoint>
+    <navPoint id="num_6" playOrder="6" class="chapter">
+      <navLabel>
+        <text>chapter six: the woman in the yellow shawl</text>
+      </navLabel>
+      <content src="index_split_006.html"/>
+    </navPoint>
+    <navPoint id="num_7" playOrder="7" class="chapter">
+      <navLabel>
+        <text>chapter seven: a spark of aspiration</text>
+      </navLabel>
+      <content src="index_split_007.html"/>
+    </navPoint>
+    <navPoint id="num_8" playOrder="8" class="chapter">
+      <navLabel>
+        <text>chapter eight: an unexpected kindness</text>
+      </navLabel>
+      <content src="index_split_008.html"/>
+    </navPoint>
+    <navPoint id="num_9" playOrder="9" class="chapter">
+      <navLabel>
+        <text>chapter nine: dreaming of knaidels</text>
+      </navLabel>
+      <content src="index_split_009.html"/>
+    </navPoint>
+    <navPoint id="num_10" playOrder="10" class="chapter">
+      <navLabel>
+        <text>chapter ten: the café across from jáchym street</text>
+      </navLabel>
+      <content src="index_split_010.html"/>
+    </navPoint>
+    <navPoint id="num_11" playOrder="11" class="chapter">
+      <navLabel>
+        <text>chapter eleven: the pickle jar by the window</text>
+      </navLabel>
+      <content src="index_split_011.html"/>
+    </navPoint>
+    <navPoint id="num_12" playOrder="12" class="chapter">
+      <navLabel>
+        <text>chapter twelve: it happened on kant street</text>
+      </navLabel>
+      <content src="index_split_012.html"/>
+    </navPoint>
+    <navPoint id="num_13" playOrder="13" class="chapter">
+      <navLabel>
+        <text>chapter thirteen: a door ajar</text>
+      </navLabel>
+      <content src="index_split_013.html"/>
+    </navPoint>
+    <navPoint id="num_14" playOrder="14" class="chapter">
+      <navLabel>
+        <text>chapter fourteen: out of a wagnerian opera</text>
+      </navLabel>
+      <content src="index_split_014.html"/>
+    </navPoint>
+    <navPoint id="num_15" playOrder="15" class="chapter">
+      <navLabel>
+        <text>chapter fifteen: the stomping feet</text>
+      </navLabel>
+      <content src="index_split_015.html"/>
+    </navPoint>
+    <navPoint id="num_16" playOrder="16" class="chapter">
+      <navLabel>
+        <text>chapter sixteen: a mirror reflecting time</text>
+      </navLabel>
+      <content src="index_split_016.html"/>
+    </navPoint>
+    <navPoint id="num_17" playOrder="17" class="chapter">
+      <navLabel>
+        <text>chapter seventeen: the book of creation</text>
+      </navLabel>
+      <content src="index_split_017.html"/>
+    </navPoint>
+    <navPoint id="num_18" playOrder="18" class="chapter">
+      <navLabel>
+        <text>chapter eighteen: the exhibition of extinct peoples</text>
+      </navLabel>
+      <content src="index_split_018.html"/>
+    </navPoint>
+    <navPoint id="num_19" playOrder="19" class="chapter">
+      <navLabel>
+        <text>chapter nineteen: their own triple entente</text>
+      </navLabel>
+      <content src="index_split_019.html"/>
+    </navPoint>
+    <navPoint id="num_20" playOrder="20" class="chapter">
+      <navLabel>
+        <text>chapter twenty: three plates of venison</text>
+      </navLabel>
+      <content src="index_split_020.html"/>
+    </navPoint>
+    <navPoint id="num_21" playOrder="21" class="chapter">
+      <navLabel>
+        <text>chapter twenty-one: an unlikely turn</text>
+      </navLabel>
+      <content src="index_split_021.html"/>
+    </navPoint>
+    <navPoint id="num_22" playOrder="22" class="chapter">
+      <navLabel>
+        <text>chapter twenty-two: the blessing after the meal</text>
+      </navLabel>
+      <content src="index_split_022.html"/>
+    </navPoint>
+    <navPoint id="num_23" playOrder="23" class="chapter">
+      <navLabel>
+        <text>chapter twenty-three: the voice on the phone</text>
+      </navLabel>
+      <content src="index_split_023.html"/>
+    </navPoint>
+    <navPoint id="num_24" playOrder="24" class="chapter">
+      <navLabel>
+        <text>chapter twenty-four: something like a drug</text>
+      </navLabel>
+      <content src="index_split_024.html"/>
+    </navPoint>
+    <navPoint id="num_25" playOrder="25" class="chapter">
+      <navLabel>
+        <text>chapter twenty-five: in the rain</text>
+      </navLabel>
+      <content src="index_split_025.html"/>
+    </navPoint>
+    <navPoint id="num_26" playOrder="26" class="chapter">
+      <navLabel>
+        <text>chapter twenty-six: one mystery leads to another</text>
+      </navLabel>
+      <content src="index_split_026.html"/>
+    </navPoint>
+    <navPoint id="num_27" playOrder="27" class="chapter">
+      <navLabel>
+        <text>chapter twenty-seven: the footprints in the cellar</text>
+      </navLabel>
+      <content src="index_split_027.html"/>
+    </navPoint>
+    <navPoint id="num_28" playOrder="28" class="chapter">
+      <navLabel>
+        <text>chapter twenty-eight: under the glare of jan hus</text>
+      </navLabel>
+      <content src="index_split_028.html"/>
+    </navPoint>
+    <navPoint id="num_29" playOrder="29" class="chapter">
+      <navLabel>
+        <text>chapter twenty-nine: bumping into each other</text>
+      </navLabel>
+      <content src="index_split_029.html"/>
+    </navPoint>
+    <navPoint id="num_30" playOrder="30" class="chapter">
+      <navLabel>
+        <text>chapter thirty: the joy of potato dumplings</text>
+      </navLabel>
+      <content src="index_split_030.html"/>
+    </navPoint>
+    <navPoint id="num_31" playOrder="31" class="chapter">
+      <navLabel>
+        <text>chapter thirty-one: collaborating with the enemy</text>
+      </navLabel>
+      <content src="index_split_031.html"/>
+    </navPoint>
+    <navPoint id="num_32" playOrder="32" class="chapter">
+      <navLabel>
+        <text>chapter thirty-two: when a chicken scratches</text>
+      </navLabel>
+      <content src="index_split_032.html"/>
+    </navPoint>
+    <navPoint id="num_33" playOrder="33" class="chapter">
+      <navLabel>
+        <text>chapter thirty-three: a ride in a paternoster</text>
+      </navLabel>
+      <content src="index_split_033.html"/>
+    </navPoint>
+    <navPoint id="num_34" playOrder="34" class="chapter">
+      <navLabel>
+        <text>chapter thirty-four: the eyes of a golem</text>
+      </navLabel>
+      <content src="index_split_034.html"/>
+    </navPoint>
+    <navPoint id="num_35" playOrder="35" class="chapter">
+      <navLabel>
+        <text>chapter thirty-five: a small amount of happiness</text>
+      </navLabel>
+      <content src="index_split_035.html"/>
+    </navPoint>
+    <navPoint id="num_36" playOrder="36" class="chapter">
+      <navLabel>
+        <text>chapter thirty-six: the skirt-chaser</text>
+      </navLabel>
+      <content src="index_split_036.html"/>
+    </navPoint>
+    <navPoint id="num_37" playOrder="37" class="chapter">
+      <navLabel>
+        <text>chapter thirty-seven: the swatting of a fly</text>
+      </navLabel>
+      <content src="index_split_037.html"/>
+    </navPoint>
+    <navPoint id="num_38" playOrder="38" class="chapter">
+      <navLabel>
+        <text>chapter thirty-eight: the man who refused to collaborate</text>
+      </navLabel>
+      <content src="index_split_038.html"/>
+    </navPoint>
+    <navPoint id="num_39" playOrder="39" class="chapter">
+      <navLabel>
+        <text>chapter thirty-nine: what lurks in the shadows</text>
+      </navLabel>
+      <content src="index_split_039.html"/>
+    </navPoint>
+    <navPoint id="num_40" playOrder="40" class="chapter">
+      <navLabel>
+        <text>chapter forty: returning to the scene of the crime</text>
+      </navLabel>
+      <content src="index_split_040.html"/>
+    </navPoint>
+    <navPoint id="num_41" playOrder="41" class="chapter">
+      <navLabel>
+        <text>chapter forty-one: a large number of valuables</text>
+      </navLabel>
+      <content src="index_split_041.html"/>
+    </navPoint>
+    <navPoint id="num_42" playOrder="42" class="chapter">
+      <navLabel>
+        <text>chapter forty-two: the circumstances of his death</text>
+      </navLabel>
+      <content src="index_split_042.html"/>
+    </navPoint>
+    <navPoint id="num_43" playOrder="43" class="chapter">
+      <navLabel>
+        <text>chapter forty-three: pretending it all away</text>
+      </navLabel>
+      <content src="index_split_043.html"/>
+    </navPoint>
+    <navPoint id="num_44" playOrder="44" class="chapter">
+      <navLabel>
+        <text>chapter forty-four: dinner with hegel and heisenberg and a man named saul</text>
+      </navLabel>
+      <content src="index_split_044.html"/>
+    </navPoint>
+    <navPoint id="num_45" playOrder="45" class="chapter">
+      <navLabel>
+        <text>chapter forty-five: different turns of the same phrase</text>
+      </navLabel>
+      <content src="index_split_045.html"/>
+    </navPoint>
+    <navPoint id="num_46" playOrder="46" class="chapter">
+      <navLabel>
+        <text>chapter forty-six: cutting to the chase</text>
+      </navLabel>
+      <content src="index_split_046.html"/>
+    </navPoint>
+    <navPoint id="num_47" playOrder="47" class="chapter">
+      <navLabel>
+        <text>chapter forty-seven: the last goodbye</text>
+      </navLabel>
+      <content src="index_split_047.html"/>
+    </navPoint>
+    <navPoint id="num_48" playOrder="48" class="chapter">
+      <navLabel>
+        <text>chapter forty-eight: the kindness of his smile</text>
+      </navLabel>
+      <content src="index_split_048.html"/>
+    </navPoint>
+    <navPoint id="num_49" playOrder="49" class="chapter">
+      <navLabel>
+        <text>chapter forty-nine: the papers on the floor</text>
+      </navLabel>
+      <content src="index_split_049.html"/>
+    </navPoint>
+    <navPoint id="num_50" playOrder="50" class="chapter">
+      <navLabel>
+        <text>chapter fifty: in pursuit of mr. malý</text>
+      </navLabel>
+      <content src="index_split_050.html"/>
+    </navPoint>
+    <navPoint id="num_51" playOrder="51" class="chapter">
+      <navLabel>
+        <text>chapter fifty-one: good king wenceslas</text>
+      </navLabel>
+      <content src="index_split_051.html"/>
+    </navPoint>
+    <navPoint id="num_52" playOrder="52" class="chapter">
+      <navLabel>
+        <text>chapter fifty-two: a sense of something familiar</text>
+      </navLabel>
+      <content src="index_split_052.html"/>
+    </navPoint>
+    <navPoint id="num_53" playOrder="53" class="chapter">
+      <navLabel>
+        <text>chapter fifty-three: from deep inside the building</text>
+      </navLabel>
+      <content src="index_split_053.html"/>
+    </navPoint>
+    <navPoint id="num_54" playOrder="54" class="chapter">
+      <navLabel>
+        <text>chapter fifty-four: limitless unknowns and no equations</text>
+      </navLabel>
+      <content src="index_split_054.html"/>
+    </navPoint>
+    <navPoint id="num_55" playOrder="55" class="chapter">
+      <navLabel>
+        <text>chapter fifty-five: a burst of excitement</text>
+      </navLabel>
+      <content src="index_split_055.html"/>
+    </navPoint>
+    <navPoint id="num_56" playOrder="56" class="chapter">
+      <navLabel>
+        <text>chapter fifty-six: following the suspects</text>
+      </navLabel>
+      <content src="index_split_056.html"/>
+    </navPoint>
+    <navPoint id="num_57" playOrder="57" class="chapter">
+      <navLabel>
+        <text>chapter fifty-seven: a stunning realization</text>
+      </navLabel>
+      <content src="index_split_057.html"/>
+    </navPoint>
+    <navPoint id="num_58" playOrder="58" class="chapter">
+      <navLabel>
+        <text>chapter fifty-eight: the road from home</text>
+      </navLabel>
+      <content src="index_split_058.html"/>
+    </navPoint>
+    <navPoint id="num_59" playOrder="59" class="chapter">
+      <navLabel>
+        <text>thank you</text>
+      </navLabel>
+      <content src="index_split_059.html"/>
+    </navPoint>
+    <navPoint id="num_60" playOrder="60" class="chapter">
+      <navLabel>
+        <text>copyright</text>
+      </navLabel>
+      <content src="index_split_060.html"/>
+    </navPoint>
+  </navMap>
+</ncx>
