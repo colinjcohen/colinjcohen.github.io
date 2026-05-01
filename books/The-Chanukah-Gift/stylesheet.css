@@ -214,29 +214,25 @@
   line-height: 1.2;
 }
 .calibre2 {
-  line-height: 1.2;
-  text-decoration: none;
-}
-.calibre3 {
   font-weight: bold;
   line-height: 1.2;
 }
-.calibre4 {
+.calibre3 {
   font-style: italic;
 }
-.calibre5 {
+.calibre4 {
   height: 67.7pt;
   width: 370pt;
 }
-.calibre6 {
+.calibre5 {
   height: 142pt;
   width: 306pt;
 }
-.calibre7 {
+.calibre6 {
   height: 375pt;
   width: 360pt;
 }
-.calibre8 {
+.calibre7 {
   height: 314pt;
   width: 432pt;
 }
