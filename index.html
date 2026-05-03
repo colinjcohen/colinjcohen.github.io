@@ -370,15 +370,17 @@
 <div class="item4">
     <h1><center><i>Last Jew in Prague</i></center></h1>
             
-    <p class="desc">A homeless man struggling to survive a freezing, rainy night in the desert recalls what his grandfather struggled to survive during World War II and how his connection to this upended his own life.</p>
+    <p class="desc">A homeless man struggling to survive a freezing, rainy night in the desert recalls what his grandfather had struggled to survive during World War II and how his connection to this upended his own life.</p>
 
     <p class="desc">Hermann Weiss had been the best police detective in Prague&#8217;s Jewish district of Josefov. Until the Nazis occupy the city and deport its Jews. He finds himself in Theresienstadt concentration camp, waiting his turn to die.</p>
     
     <p class="desc">One night, he receives a visit from an SS captain named Klaus Stamm, who&#8217;d been his friend in college before their falling out over Hermann&#8217;s future wife Ana. Klaus offers Hermann his freedom if he can discover who murdered three SS officers found near synagogues in Josefov. He threatens to shoot him if he refuses.</p>
 
-    <p class="desc">Hermann wants to refuse the offer. Still reeling from the recent loss of Ana, he yearns for death. He only agrees to help because of a promise that he&#8217;d made to Ana. But as he delves into the case, he senses that it&#8217;s leading him somewhere. He becomes driven to solve it. The two men, in spite of tensions threatening to boil over, uncover the pursuit of an object hidden beneath the ancient synagogues. Which hurls them toward both the killer and Hermann&#8217;s fate.</p>
+    <p class="desc">Hermann wants to refuse the offer. Still reeling from the recent loss of Ana, he yearns for death. He only agrees to help because of a promise that he&#8217;d made to Ana.</p>
+        
+    <p class="desc">But as he delves into the case, he senses that it&#8217;s leading him somewhere. He becomes driven to solve it. The two men, in spite of tensions threatening to boil over, uncover the pursuit of an object hidden beneath the ancient synagogues. Which hurls them toward both the killer and Hermann&#8217;s fate.</p>
 
-    <p class="desc"><i>Last Jew in Prague</i> is a historical mystery thriller that's about lifting yourself up when all you want to do is keep falling.</p>
+    <p class="desc"><i>Last Jew in Prague</i>, on its surface, is a historical mystery thriller. But it's about lifting yourself up when all you want to do is keep falling.</p>
         
     <!--But it's more than a novel.</p>
 
@@ -749,6 +751,36 @@
         event.preventDefault();
         atbw_rendition.prev();
     });
+    
+// After rendition is created
+/*atbw_rendition.on("rendered", function(section, rendition) {
+    let startX = 0;
+    let isDragging = false;
+
+    // Use Pointer Events for both mouse and touch [4]
+    atbw_rendition.manager.container.addEventListener("pointerdown", (e) => {
+        startX = e.clientX;
+        console.log('down');
+        isDragging = true;
+    });
+
+    atbw_rendition.manager.container.addEventListener("pointermove", (e) => {
+        if (!isDragging) return;
+        // Optional: Add drag feedback here
+    });
+
+    atbw_rendition.manager.container.addEventListener("pointerup", (e) => {
+        if (!isDragging) return;
+        let diff = e.clientX - startX;
+        console.log('up');
+        if (diff > 50) {
+            atbw_rendition.prev(); // Swipe right
+        } else if (diff < -50) {
+            atbw_rendition.next(); // Swipe left
+        }
+        isDragging = false;
+    });
+});*/
 </script>
 <script>    
     var ljip_book = ePub("books/Last-Jew-in-Prague/content.opf");
