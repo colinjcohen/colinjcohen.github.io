@@ -78,11 +78,11 @@
             text-align: center;
         }
         
-        .item1 { grid-area: image1; }
+        .item1 { grid-area: image1; margin-bottom: 25px;}
         .item2 { grid-area: text1; margin-left: 25px;}
-        .item3 { grid-area: image2; }
+        .item3 { grid-area: image2; margin-bottom: 25px;}
         .item4 { grid-area: text2; margin-left: 25px;}
-        .item5 { grid-area: image3; }
+        .item5 { grid-area: image3; margin-bottom: 25px;}
         .item6 { grid-area: text3; margin-left: 25px;}
 
 /*        .grid-container {
@@ -129,7 +129,7 @@
         .container {
             display: flex;
             position: relative;
-            justify-content: center;
+            /*justify-content: center;*/
             margin-top: 0px;
             margin-bottom: 50px;
             left:0;
@@ -139,12 +139,14 @@
             break-inside: avoid;
         }
         .reader {
-            display: inline-block;
+            display: flex;
+            position: relative;
             font-family: "Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif;
             box-sizing: border-box;
             left: 0;
-            width: 80%;
-            aspect-ratio: 5.5 / 8;
+            width: 90vw;
+            height: 90vh;
+            /*aspect-ratio: 5.5 / 8;*/
             /*margin-left: 0px;
             margin-bottom: 35px;*/
             background-color: white;
@@ -204,8 +206,15 @@
         .fullscreen {
             position: absolute;
             font-weight: bold;
+            top: -20px;
+            right: -15px;
+            z-index: 10;
+        }
+        .fullscreen2 {
+            position: absolute;
+            font-weight: bold;
             top: 0.3%;
-            right: 12%;
+            right: 4.275%;
             z-index: 10;
         }
         .control, .control:visited {
@@ -215,14 +224,28 @@
             position: absolute;
             font-weight: bold;
             top: 48%;
-            right: 10.4%;
+            right: -15px;
+            z-index: 10;
+        }
+        .forward2 {
+            position: absolute;
+            font-weight: bold;
+            top: 48%;
+            right: 4.275%;
             z-index: 10;
         }
         .backward {
             position: absolute;
             font-weight: bold;
             top: 48%;
-            left: 10.4%;
+            left: -15px;
+            z-index: 10;
+        }
+        .backward2 {
+            position: absolute;
+            font-weight: bold;
+            top: 48%;
+            left: 4.275%;
             z-index: 10;
         }
         .image-cropper {
@@ -294,7 +317,7 @@
                 display: block;
             }
         }
-        @media (orientation: landscape) {
+        /*@media (orientation: landscape) {
             .reader {
                 aspect-ratio: 8 / 5.5;
             }
@@ -302,7 +325,7 @@
                 margin-left: 20%;
                 margin-right: 20%;
             }
-         }
+         }*/
     </style>
 </head>
 <body style="background-color:#F4F4E2;">
@@ -310,7 +333,7 @@
     <img class="colin" src="images/colin.jpg">
 </div-->
 <h1><center>Homeless but Never Hopeless: The Writings of Colin J Cohen</center></h1>
-    <h2><center><i>A collection of e-books that blends memoir and fiction with an unconquerable pursuit of hope</i></center></h2>
+    <h2><center><i>A collection of books that blends memoir and fiction with an unconquerable pursuit of hope</i></center></h2>
     <p></p>
     <div class="image-cropper">
         <img class="colin" src="images/colin.jpg">
@@ -329,11 +352,11 @@
 </table>
 <p></p>
 <br/>
-<!--div class="grid-container">
-<div class="item1"-->
+<!--div class="grid-container"-->
+<div class="item1">
     <img id="_atbw" class="cover" src="images/all the beautiful words.rgb-01.png" style="max-width:100%;height:auto;">
-<!--/div-->
-<!--div class="item2"-->
+</div>
+<div class="item2">
     <h1><center><i>All the Beautiful Words</i></center></h1>
             
     <p class="desc">A homeless man&#8217;s altercation on a desert bus reveals an obscure book of Czech poetry. Along with a mystery relating to it and his grandfather from eighty years earlier in Nazi-occupied Prague.</p>
@@ -344,11 +367,13 @@
 
     <!--b><center><a href="books/All-the-Beautiful-Words.epub">Download Epub</a></b></center-->
     <select id="atbw_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
-    <div class="container">
-        <div class="reader" id="atbw"></div>
+    <div class="container" id="atbw_con">
+        <div class="reader" id="atbw">
         <div class="forward"><a href="#" class="control" id="atbw_forward">></a></div>
         <div class="backward"><a href="#" class="control" id="atbw_backward"><</a></div>
-        <!--div class="fullscreen"><a href="#" class="control" id="atbw_full">⛶</a></div-->
+        <div class="fullscreen"><a href="#" class="control" id="atbw_full">⛶</a></div>
+        </div>
+        
             
         
         <!--iframe src="books/All the Beautiful Words by Colin J Cohen.new.ebook.html#_Toc227319662" id="atbw" name="atbw" allow="fullscreen" allowfullscreen loading="lazy"></iframe>
@@ -375,14 +400,14 @@
         </tr>
     </table-->
                 
-<!--/div-->
+</div>
 <div class="item3">
     <img id="_ljip" class="cover" src="images/the last jew in prague.rgb-01.png" style="max-width:100%;height:auto;">
 </div>
 <div class="item4">
     <h1><center><i>Last Jew in Prague</i></center></h1>
             
-    <p class="desc">A homeless man struggling to survive a freezing, rainy night in the desert recalls what his grandfather had struggled to survive during World War II and how his connection to this upended his own life.</p>
+    <p class="desc">A homeless man, who's struggling to survive a freezing, rainy night in the desert, recalls what his grandfather had struggled to survive during World War II. He relives how his connection to it upended his own life.</p>
 
     <p class="desc">Hermann Weiss was the best police detective in Prague&#8217;s Jewish district of Josefov. But when the Nazis occupy the city and deport its Jews, he finds himself in Theresienstadt concentration camp, waiting his turn to die.</p>
     
@@ -390,7 +415,7 @@
 
     <p class="desc">Hermann wants to refuse the offer. Still reeling from the recent loss of Ana, he yearns for death. He only agrees to help because of a promise that he&#8217;d made to her.</p>
         
-    <p class="desc">But as he delves into the case, he senses that it&#8217;s leading him somewhere. He becomes driven to solve it. The two men, in spite of tensions threatening to boil over, uncover the pursuit of an object hidden beneath the ancient synagogues. Which hurls them toward both the killer and Hermann&#8217;s fate.</p>
+    <p class="desc">But as he delves into the case, he senses that it&#8217;s leading him somewhere. He becomes driven to solve it. The two men, in spite of decades-old tensions threatening to boil over, uncover the pursuit of an object hidden beneath the ancient synagogues. Which hurls them toward both the killer and Hermann&#8217;s fate.</p>
 
     <p class="desc"><i>Last Jew in Prague</i> is, on its surface, a historical mystery thriller. But, beneath it, it's about lifting yourself up when all you want to do is keep falling.</p>
         
@@ -401,11 +426,13 @@
     <!--p><center><b><a href="books/Last-Jew-in-Prague.epub">Download Epub</a></b></center></p>
     <hr-->
     <select id="ljip_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
-    <div class="container">
-        <div class="reader" id="ljip"></div>
-        <div class="forward"><a href="#" class="control" id="ljip_forward">></a></div>
-        <div class="backward"><a href="#" class="control" id="ljip_backward"><</a></div>
-    </div>
+    <div class="container" id="ljip_con">
+        <div class="reader" id="ljip">
+            <div class="forward"><a href="#" class="control" id="ljip_forward">></a></div>
+            <div class="backward"><a href="#" class="control" id="ljip_backward"><</a></div>
+            <div class="fullscreen"><a href="#" class="control" id="ljip_full">⛶</a></div>
+        </div>
+   </div>
         
     <!--table style="width:50%">
         <tr>
@@ -595,9 +622,9 @@
             
     <p class="desc">On a Chanukah in a windswept desert, a homeless man receives a series of letters postmarked thirty-five years earlier. Inside them are journal entries that he reads over the phone to his estranged twin sister Rudi. They come from a dying eighteen year old named Yon, who changed both their lives in the early 1980s and will do so a second time.</p>
     
-    <p class="desc">The journal tells of a secret Chanukah gift Yon got. One that returns him to a year earlier. To before he met Rudi. He learns that he can avoid the event that will trigger his death by not falling in love with her.</p>
+    <p class="desc">The journal tells of a secret Chanukah gift Yon got. One that returns him to a year earlier. To before he met Rudi. He learns that he can avoid what will trigger his death by not falling in love with her.</p>
 
-    <p class="desc">This should be easy. Yon can&#8217;t recall Rudi beyond a few fleeting minutes with her. Moreover, he has looks, wealth, and a bright future while she&#8217;s a troubled punk with no future at all.</p>
+    <p class="desc">This should be easy. Yon can&#8217;t recall Rudi beyond a few fleeting minutes. Moreover, he has looks, wealth, and a bright future while she&#8217;s a troubled punk with no future.</p>
     
     <p class="desc">But he can&#8217;t prevent how this one-woman rollercoaster capsizes him and makes him feel alive. Nor can he shy away from an ages-old hate that threatens to destroy her and could do the same to him. Choosing between saving her and himself won&#8217;t be easy at all.</p>
 
@@ -605,10 +632,12 @@
 
     <!--p><b><center><a href="books/The-Chanukah-Gift.epub">Download Epub</a></center></b></p-->
     <select id="tcg_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
-    <div class="container">
-        <div class="reader" id="tcg"></div>
-        <div class="forward"><a href="#" class="control" id="tcg_forward">></a></div>
-        <div class="backward"><a href="#" class="control" id="tcg_backward"><</a></div>
+    <div class="container" id="tcg_con">
+        <div class="reader" id="tcg">
+            <div class="forward"><a href="#" class="control" id="tcg_forward">></a></div>
+            <div class="backward"><a href="#" class="control" id="tcg_backward"><</a></div>
+            <div class="fullscreen"><a href="#" class="control" id="tcg_full">⛶</a></div>
+        </div>
         
          <!--iframe src="books/The Chanukah Gift by Colin J Cohen.converted.ebook.html#_Toc227319566" id="tcg" name="tcg" allow="fullscreen" allowfullscreen loading="lazy"></iframe>
         <div class="toc"><a href="#" class="control" id="tcg_toc">⋯</a></div-->
@@ -717,6 +746,16 @@
 <small><center>&copy; Copyright 2022-26 by <a href="mailto:colinjcohen@icloud.com">Colin J Cohen</a>. All rights reserved.</center></small>
 <p></p>
 <script src="books/epub.min.js"></script>
+<script>
+    var win_pos;
+    
+    document.addEventListener('fullscreenchange', () => {
+        if (!document.fullscreenElement) {
+        // Restore the scroll position immediately after exiting
+            window.scrollTo(0, win_pos);
+        }
+    });   
+</script>
 <script>    
     var atbw_book = ePub("books/All-the-Beautiful-Words/content.opf");
     var atbw_rendition = atbw_book.renderTo("atbw", {
@@ -724,17 +763,22 @@
       flow: "paginated",
       width: "100%",
       height: "100%",
-      minSpreadWidth: 10000
+      minSpreadWidth: 1000
     });  
     atbw_rendition.themes.fontSize('133%');
     atbw_rendition.themes.override('font-family', '"Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif');
     atbw_rendition.themes.override('font-weight', '500');
     
-    var displayed = atbw_rendition.display("index_split_001.html");
-    
-    displayed.then(function(renderer){
-      // -- do stuff
+    atbw_book.ready.then(function(){
+        var atbw_savedCfi = localStorage.getItem(atbw_book.key() + '-cfi');
+        var atbw_displayed = atbw_rendition.display(atbw_savedCfi || "index_split_001.html");    
     });
+   
+    /*var atbw_displayed = atbw_rendition.display("index_split_001.html");
+    
+    atbw_displayed.then(function(renderer){
+      // -- do stuff
+    });*/
 
     // Navigation loaded
     atbw_book.loaded.navigation.then(function(toc){
@@ -754,6 +798,11 @@
             
             return false;
         };
+    });    
+    
+    atbw_rendition.on('relocated', function(location){
+        // location.start.cfi is the CFI of the first visible node
+        localStorage.setItem(atbw_book.key() + '-cfi', location.start.cfi);
     });
     
     document.getElementById("atbw_forward").addEventListener("click", function(event) {
@@ -766,11 +815,16 @@
         atbw_rendition.prev();
     });
     
-    /*document.getElementById("atbw_full").addEventListener("click", function(event) {
+    document.getElementById("atbw_full").addEventListener("click", function(event) {
         const reader = document.getElementById('atbw');
-        reader.requestFullscreen();
-    });*/
-   
+        if (!document.fullscreenElement) {
+            win_pos = window.scrollY;
+            reader.requestFullscreen();
+        }
+        else {
+            document.exitFullscreen();
+        }
+    });   
 // After rendition is created
 /*atbw_rendition.on("rendered", function(section, rendition) {
     let startX = 0;
@@ -808,17 +862,22 @@
       flow: "paginated",
       width: "100%",
       height: "100%",
-      minSpreadWidth: 10000
+      minSpreadWidth: 1000
     });  
     ljip_rendition.themes.fontSize('133%');
     ljip_rendition.themes.override('font-family', '"Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif');
     ljip_rendition.themes.override('font-weight', '500');
     
-    var displayed = ljip_rendition.display("index_split_001.html");
-    
-    displayed.then(function(renderer){
-      // -- do stuff
+    ljip_book.ready.then(function(){
+        var ljip_savedCfi = localStorage.getItem(ljip_book.key() + '-cfi');
+        var ljip_displayed = ljip_rendition.display(ljip_savedCfi || "index_split_001.html");    
     });
+   
+    /*var ljip_displayed = ljip_rendition.display("index_split_001.html");
+    
+    ljip_displayed.then(function(renderer){
+      // -- do stuff
+    });*/
 
     // Navigation loaded
     ljip_book.loaded.navigation.then(function(toc){
@@ -839,6 +898,11 @@
 			};
     });
     
+    ljip_rendition.on('relocated', function(location){
+        // location.start.cfi is the CFI of the first visible node
+        localStorage.setItem(ljip_book.key() + '-cfi', location.start.cfi);
+    });
+    
     document.getElementById("ljip_forward").addEventListener("click", function(event) {
         event.preventDefault();
         ljip_rendition.next();
@@ -848,6 +912,17 @@
         event.preventDefault();
         ljip_rendition.prev();
     });
+    
+    document.getElementById("ljip_full").addEventListener("click", function(event) {
+        const reader = document.getElementById('ljip');
+        if (!document.fullscreenElement) {
+            win_pos = window.scrollY;
+            reader.requestFullscreen();
+        }
+        else {
+            document.exitFullscreen();
+        }
+    });
 </script>
 <script>    
     var tcg_book = ePub("books/The-Chanukah-Gift/content.opf");
@@ -856,17 +931,22 @@
       flow: "paginated",
       width: "100%",
       height: "100%",
-      minSpreadWidth: 10000
+      minSpreadWidth: 1000
     });  
     tcg_rendition.themes.fontSize('133%');
     tcg_rendition.themes.override('font-family', '"Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif');
     tcg_rendition.themes.override('font-weight', '500');
     
-    var displayed = tcg_rendition.display("index_split_001.html");
-    
-    displayed.then(function(renderer){
-      // -- do stuff
+    tcg_book.ready.then(function(){
+        var tcg_savedCfi = localStorage.getItem(tcg_book.key() + '-cfi');
+        var tcg_displayed = tcg_rendition.display(tcg_savedCfi || "index_split_001.html");    
     });
+   
+    /*var tcg_displayed = tcg_rendition.display("index_split_001.html");
+    
+    tcg_displayed.then(function(renderer){
+      // -- do stuff
+    });*/
 
     // Navigation loaded
     tcg_book.loaded.navigation.then(function(toc){
@@ -887,6 +967,11 @@
 			};
     });
     
+    tcg_rendition.on('relocated', function(location){
+        // location.start.cfi is the CFI of the first visible node
+        localStorage.setItem(tcg_book.key() + '-cfi', location.start.cfi);
+    });
+    
     document.getElementById("tcg_forward").addEventListener("click", function(event) {
         event.preventDefault();
         tcg_rendition.next();
@@ -895,6 +980,17 @@
     document.getElementById("tcg_backward").addEventListener("click", function(event) {
         event.preventDefault();
         tcg_rendition.prev();
+    });
+    
+    document.getElementById("tcg_full").addEventListener("click", function(event) {
+        const reader = document.getElementById('tcg');
+        if (!document.fullscreenElement) {
+            win_pos = window.scrollY;
+            reader.requestFullscreen();
+        }
+        else {
+            document.exitFullscreen();
+        }
     });
 </script>
 <!--script>
