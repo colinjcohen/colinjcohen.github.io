@@ -5,9 +5,9 @@
     <dc:title>The Chanukah Gift</dc:title>
     <dc:creator opf:file-as="Cohen, Colin J" opf:role="aut">Colin J Cohen</dc:creator>
     <dc:contributor opf:role="bkp">calibre (9.7.0) [https://calibre-ebook.com]</dc:contributor>
-    <meta name="calibre:timestamp" content="2026-05-15T14:31:54.961828+00:00"/>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">cef9f8ff-21fd-462f-8981-deae85f0dbb9</dc:identifier>
-    <dc:identifier opf:scheme="calibre">cef9f8ff-21fd-462f-8981-deae85f0dbb9</dc:identifier>
+    <meta name="calibre:timestamp" content="2026-05-15T14:47:22.571569+00:00"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">7a8982c2-e008-4ada-9ca0-0c72492d4ba4</dc:identifier>
+    <dc:identifier opf:scheme="calibre">7a8982c2-e008-4ada-9ca0-0c72492d4ba4</dc:identifier>
     <meta name="calibre:title_sort" content="Chanukah Gift, The"/>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
     <meta name="cover" content="cover"/>
@@ -26,9 +26,9 @@
     <item id="id13" href="index_split_008.html" media-type="application/xhtml+xml"/>
     <item id="id12" href="index_split_009.html" media-type="application/xhtml+xml"/>
     <item id="id11" href="index_split_010.html" media-type="application/xhtml+xml"/>
-    <item id="id4" href="images/image.emf" media-type="application/x-msmetafile"/>
     <item id="id6" href="images/image-1.svg" media-type="image/svg+xml"/>
-    <item id="id5" href="images/image-2.svg" media-type="image/svg+xml"/>
+    <item id="id4" href="images/image-2.svg" media-type="image/svg+xml"/>
+    <item id="id5" href="images/image-3.svg" media-type="image/svg+xml"/>
     <item id="id3" href="images/image.svg" media-type="image/svg+xml"/>
     <item id="page_css" href="page_styles.css" media-type="text/css"/>
     <item id="css" href="stylesheet.css" media-type="text/css"/>
