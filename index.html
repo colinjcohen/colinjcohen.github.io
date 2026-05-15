@@ -207,7 +207,7 @@
             position: absolute;
             font-weight: bold;
             top: -20px;
-            right: -15px;
+            right: -15.5px;
             z-index: 10;
         }
         .fullscreen2 {
@@ -224,7 +224,7 @@
             position: absolute;
             font-weight: bold;
             top: 48%;
-            right: -15px;
+            right: -15.5px;
             z-index: 10;
         }
         .forward2 {
@@ -238,7 +238,7 @@
             position: absolute;
             font-weight: bold;
             top: 48%;
-            left: -15px;
+            left: -15.5px;
             z-index: 10;
         }
         .backward2 {
@@ -340,7 +340,7 @@
     </div>
     
     <p class="desc">I was an urban professional before struggling with depression and homelessness. I lived on desert streets for years and had stints in psychiatric wards, a homeless shelter, and a fundamentalist mission in the San Bernardino National Forest.</p>
-    <p class="desc">With no chance of escaping myself, I needed hope. The hope that would come from these books. They guided me above the bottom that I had fallen through. They inspired me forward.</p>
+    <p class="desc">With no chance of escaping myself, I needed hope. The hope that would come from the stories I would write. They guided me above the bottom that I had fallen through. They inspired me forward.</p>
     <p class="desc">I hope you find them as inspiring.</p></center>
     
     <table style="margin-left: auto; margin-right: auto; font-size: 1.175em;">
@@ -772,6 +772,15 @@
     atbw_book.ready.then(function(){
         var atbw_savedCfi = localStorage.getItem(atbw_book.key() + '-cfi');
         var atbw_displayed = atbw_rendition.display(atbw_savedCfi || "index_split_001.html");    
+        
+        atbw_rendition.themes.default({
+            'body': {
+                '-webkit-user-select': 'none',
+                '-moz-user-select': 'none',
+                '-ms-user-select': 'none',
+                'user-select': 'none'
+            }
+        });    
     });
    
     /*var atbw_displayed = atbw_rendition.display("index_split_001.html");
@@ -871,6 +880,15 @@
     ljip_book.ready.then(function(){
         var ljip_savedCfi = localStorage.getItem(ljip_book.key() + '-cfi');
         var ljip_displayed = ljip_rendition.display(ljip_savedCfi || "index_split_001.html");    
+        
+        ljip_rendition.themes.default({
+            'body': {
+                '-webkit-user-select': 'none',
+                '-moz-user-select': 'none',
+                '-ms-user-select': 'none',
+                'user-select': 'none'
+            }
+        });    
     });
    
     /*var ljip_displayed = ljip_rendition.display("index_split_001.html");
@@ -940,6 +958,15 @@
     tcg_book.ready.then(function(){
         var tcg_savedCfi = localStorage.getItem(tcg_book.key() + '-cfi');
         var tcg_displayed = tcg_rendition.display(tcg_savedCfi || "index_split_001.html");    
+        
+        tcg_rendition.themes.default({
+            'body': {
+                '-webkit-user-select': 'none',
+                '-moz-user-select': 'none',
+                '-ms-user-select': 'none',
+                'user-select': 'none'
+            }
+        });    
     });
    
     /*var tcg_displayed = tcg_rendition.display("index_split_001.html");
