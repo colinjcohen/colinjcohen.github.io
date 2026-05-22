@@ -126,6 +126,12 @@
             margin-left: 10%;
             margin-right: 10%;
         }
+        .center-container {
+            display: flex; /* Aligns items on the same line */
+            justify-content: center; /* Centers items horizontally */
+            align-items: center; /* Centers items vertically (optional) */
+            gap: 10px; /* Adds space between the select and button */
+        }
         .container {
             display: flex;
             position: relative;
@@ -159,8 +165,11 @@
         }
         select {
             display: block;
-            margin: 0 auto;
-            width: 50%;
+             width: 50%;
+            font-size: 1.33em;
+        }
+        button {
+            display: block;
             font-size: 1.33em;
         }
         #viewer {
@@ -206,8 +215,8 @@
         .fullscreen {
             position: absolute;
             font-weight: bold;
-            top: -20px;
-            right: -15.5px;
+            top: -21px;
+            right: -16.5px;
             z-index: 10;
         }
         .fullscreen2 {
@@ -340,7 +349,7 @@
     </div>
     
     <p class="desc">I was an urban professional before struggling with depression and homelessness. I lived on desert streets for years. I had stints in psychiatric wards, a homeless shelter, and a fundamentalist mission in the San Bernardino National Forest.</p>
-    <p class="desc">With no chance of escaping myself, I needed hope. The hope that would come from meshing my life with uplifting stories. They guided me above the bottom that I had fallen through. They inspired me forward.</p>
+    <p class="desc">With no chance of escaping myself, I needed hope. The hope that would come from the uplifting stories I&#8217;d write. Weaving my life with fiction, they guided me above the bottom that I had fallen through. They inspired me forward.</p>
     <p class="desc">I hope you find them as inspiring.</p></center>
     
     <table style="margin-left: auto; margin-right: auto; font-size: 1.175em;">
@@ -366,7 +375,11 @@
     <p class="desc">&#8220;All the Beautiful Words&#8221; is a short story about desperation and aspiration and how the two can entwine.</p>
 
     <!--b><center><a href="books/All-the-Beautiful-Words.epub">Download Epub</a></b></center-->
-    <select id="atbw_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
+    <div class="center-container">
+        <button id="atbw_inc">+</button>
+        <select id="atbw_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
+        <button id="atbw_dec">-</button>
+    </div>
     <div class="container" id="atbw_con">
         <div class="reader" id="atbw">
         <div class="forward"><a href="#" class="control" id="atbw_forward">></a></div>
@@ -425,7 +438,11 @@
     
     <!--p><center><b><a href="books/Last-Jew-in-Prague.epub">Download Epub</a></b></center></p>
     <hr-->
-    <select id="ljip_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
+    <div class="center-container">
+        <button id="ljip_inc">+</button>
+        <select id="ljip_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
+        <button id="ljip_dec">-</button>
+    </div>
     <div class="container" id="ljip_con">
         <div class="reader" id="ljip">
             <div class="forward"><a href="#" class="control" id="ljip_forward">></a></div>
@@ -620,7 +637,7 @@
 <div class="item6">
     <h1><center><i>The Chanukah Gift</i></center></h1>
             
-    <p class="desc">On a Chanukah in a windswept desert, a homeless man receives a series of letters postmarked thirty-five years earlier. Inside them are journal entries that he reads over the phone to his estranged twin sister Rudi. They come from a dying eighteen-year-old named Yon, who changed both their lives in the early 1980s and will do so a second time.</p>
+    <p class="desc">On a Chanukah in a windswept desert, a homeless man receives a series of letters postmarked thirty-five years earlier. Inside them are journal entries that he reads over the phone to his estranged twin sister Rudi. They come from a dying eighteen-year-old named Yon, who changed both their lives in the early 1980s and will do so for a second time.</p>
     
     <p class="desc">The journal tells of a secret Chanukah gift Yon got. One that returns him to a year earlier. To before he met Rudi. He learns that he can avoid what will trigger his death by not falling in love with her.</p>
 
@@ -631,7 +648,11 @@
     <p class="desc"><i>The Chanukah Gift</i> is a big, emotional, and uplifting love story. A tearjerker and proud of it.</p>
 
     <!--p><b><center><a href="books/The-Chanukah-Gift.epub">Download Epub</a></center></b></p-->
-    <select id="tcg_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
+    <div class="center-container">
+        <button id="tcg_inc">+</button>
+        <select id="tcg_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
+        <button id="tcg_dec">-</button>
+    </div>
     <div class="container" id="tcg_con">
         <div class="reader" id="tcg">
             <div class="forward"><a href="#" class="control" id="tcg_forward">></a></div>
@@ -764,14 +785,19 @@
       width: "100%",
       height: "100%",
       minSpreadWidth: 1000
-    });  
-    atbw_rendition.themes.fontSize('133%');
+    });
+    var atbw_minCfi = "epubcfi(/6/6[id13]!/4/2[id_Toc228463435]/1:0)";
+    var atbw_fontSize;
+    
     atbw_rendition.themes.override('font-family', '"Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif');
     atbw_rendition.themes.override('font-weight', '500');
     
     atbw_book.ready.then(function(){
         var atbw_savedCfi = localStorage.getItem(atbw_book.key() + '-cfi');
         var atbw_displayed = atbw_rendition.display(atbw_savedCfi || "index_split_001.html");    
+        
+        atbw_fontSize = Number(localStorage.getItem(atbw_book.key() + '-fontSize') || 130);
+        atbw_rendition.themes.fontSize(`${atbw_fontSize}%`);
         
         atbw_rendition.themes.default({
             'body': {
@@ -812,8 +838,25 @@
     atbw_rendition.on('relocated', function(location){
         // location.start.cfi is the CFI of the first visible node
         localStorage.setItem(atbw_book.key() + '-cfi', location.start.cfi);
+        window.atbw_currentCfi = location.start.cfi;
     });
     
+    document.getElementById("atbw_inc").addEventListener("click", function(event) {
+        event.preventDefault();
+        atbw_fontSize += 10;
+        atbw_rendition.themes.fontSize(`${atbw_fontSize}%`);
+        localStorage.setItem(atbw_book.key() + '-fontSize', atbw_fontSize);
+    });
+
+    document.getElementById("atbw_dec").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (atbw_fontSize > 50) {
+            atbw_fontSize -= 10;
+            atbw_rendition.themes.fontSize(`${atbw_fontSize}%`);
+            localStorage.setItem(atbw_book.key() + '-fontSize', atbw_fontSize);
+        }
+    });
+
     document.getElementById("atbw_forward").addEventListener("click", function(event) {
         event.preventDefault();
         atbw_rendition.next();
@@ -821,7 +864,8 @@
 
     document.getElementById("atbw_backward").addEventListener("click", function(event) {
         event.preventDefault();
-        atbw_rendition.prev();
+        if (window.atbw_currentCfi && window.atbw_currentCfi !== atbw_minCfi)
+            atbw_rendition.prev();
     });
     
     document.getElementById("atbw_full").addEventListener("click", function(event) {
@@ -873,13 +917,18 @@
       height: "100%",
       minSpreadWidth: 1000
     });  
-    ljip_rendition.themes.fontSize('133%');
+    var ljip_minCfi = "epubcfi(/6/6[id160]!/4/4[id_Toc227591572]/2/1:0)";
+    var ljip_fontSize;
+    
     ljip_rendition.themes.override('font-family', '"Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif');
     ljip_rendition.themes.override('font-weight', '500');
     
     ljip_book.ready.then(function(){
         var ljip_savedCfi = localStorage.getItem(ljip_book.key() + '-cfi');
         var ljip_displayed = ljip_rendition.display(ljip_savedCfi || "index_split_001.html");    
+        
+        ljip_fontSize = Number(localStorage.getItem(ljip_book.key() + '-fontSize') || 130);
+        ljip_rendition.themes.fontSize(`${ljip_fontSize}%`);
         
         ljip_rendition.themes.default({
             'body': {
@@ -919,8 +968,25 @@
     ljip_rendition.on('relocated', function(location){
         // location.start.cfi is the CFI of the first visible node
         localStorage.setItem(ljip_book.key() + '-cfi', location.start.cfi);
+        window.ljip_currentCfi = location.start.cfi;
     });
     
+    document.getElementById("ljip_inc").addEventListener("click", function(event) {
+        event.preventDefault();
+        ljip_fontSize += 10;
+        ljip_rendition.themes.fontSize(`${ljip_fontSize}%`);
+        localStorage.setItem(ljip_book.key() + '-fontSize', ljip_fontSize);
+    });
+
+    document.getElementById("ljip_dec").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (ljip_fontSize > 50) {
+            ljip_fontSize -= 10;
+            ljip_rendition.themes.fontSize(`${ljip_fontSize}%`);
+            localStorage.setItem(ljip_book.key() + '-fontSize', ljip_fontSize);
+        }
+    });
+
     document.getElementById("ljip_forward").addEventListener("click", function(event) {
         event.preventDefault();
         ljip_rendition.next();
@@ -928,7 +994,8 @@
 
     document.getElementById("ljip_backward").addEventListener("click", function(event) {
         event.preventDefault();
-        ljip_rendition.prev();
+        if (window.ljip_currentCfi && window.ljip_currentCfi !== ljip_minCfi)
+            ljip_rendition.prev();
     });
     
     document.getElementById("ljip_full").addEventListener("click", function(event) {
@@ -951,13 +1018,18 @@
       height: "100%",
       minSpreadWidth: 1000
     });  
-    tcg_rendition.themes.fontSize('133%');
+    var tcg_minCfi = "epubcfi(/6/6[id110]!/4/2[id_Toc228456259]/2[id_thefirstnight]/1:0)";
+    var tcg_fontSize;
+    
     tcg_rendition.themes.override('font-family', '"Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif');
     tcg_rendition.themes.override('font-weight', '500');
     
     tcg_book.ready.then(function(){
         var tcg_savedCfi = localStorage.getItem(tcg_book.key() + '-cfi');
         var tcg_displayed = tcg_rendition.display(tcg_savedCfi || "index_split_001.html");    
+        
+        tcg_fontSize = Number(localStorage.getItem(tcg_book.key() + '-fontSize') || 130);
+        tcg_rendition.themes.fontSize(`${tcg_fontSize}%`);
         
         tcg_rendition.themes.default({
             'body': {
@@ -997,8 +1069,25 @@
     tcg_rendition.on('relocated', function(location){
         // location.start.cfi is the CFI of the first visible node
         localStorage.setItem(tcg_book.key() + '-cfi', location.start.cfi);
+        window.tcg_currentCfi = location.start.cfi;
     });
     
+    document.getElementById("tcg_inc").addEventListener("click", function(event) {
+        event.preventDefault();
+        tcg_fontSize += 10;
+        tcg_rendition.themes.fontSize(`${tcg_fontSize}%`);
+        localStorage.setItem(tcg_book.key() + '-fontSize', tcg_fontSize);
+    });
+
+    document.getElementById("tcg_dec").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (tcg_fontSize > 50) {
+            tcg_fontSize -= 10;
+            tcg_rendition.themes.fontSize(`${tcg_fontSize}%`);
+            localStorage.setItem(tcg_book.key() + '-fontSize', tcg_fontSize);
+        }
+    });
+
     document.getElementById("tcg_forward").addEventListener("click", function(event) {
         event.preventDefault();
         tcg_rendition.next();
@@ -1006,7 +1095,8 @@
 
     document.getElementById("tcg_backward").addEventListener("click", function(event) {
         event.preventDefault();
-        tcg_rendition.prev();
+        if (window.tcg_currentCfi && window.tcg_currentCfi !== tcg_minCfi)
+            tcg_rendition.prev();
     });
     
     document.getElementById("tcg_full").addEventListener("click", function(event) {
