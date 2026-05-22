@@ -375,6 +375,9 @@
     <p class="desc">&#8220;All the Beautiful Words&#8221; is a short story about desperation and aspiration and how the two can entwine.</p>
 
     <!--b><center><a href="books/All-the-Beautiful-Words.epub">Download Epub</a></b></center-->
+    <div id="loading-dialog" style="background: white; position: fixed; top: 50%; padding-left: 20px; padding-right: 20px; left: 50%; transform: translate(-50%, -50%); z-index: 1000;">
+        <p>Loading books . . .</p>
+    </div>
     <div class="center-container">
         <button id="atbw_inc">+</button>
         <select id="atbw_toc" onmousedown="this.selectedIndex = -1;" onchange=></select>
@@ -1028,6 +1031,10 @@
         var tcg_savedCfi = localStorage.getItem(tcg_book.key() + '-cfi');
         var tcg_displayed = tcg_rendition.display(tcg_savedCfi || "index_split_001.html");    
         
+        tcg_displayed.then(function(renderer){
+            document.getElementById("loading-dialog").style.display = "none";
+        });
+
         tcg_fontSize = Number(localStorage.getItem(tcg_book.key() + '-fontSize') || 130);
         tcg_rendition.themes.fontSize(`${tcg_fontSize}%`);
         
@@ -1041,12 +1048,8 @@
         });    
     });
    
-    /*var tcg_displayed = tcg_rendition.display("index_split_001.html");
+    /*var tcg_displayed = tcg_rendition.display("index_split_001.html");*/
     
-    tcg_displayed.then(function(renderer){
-      // -- do stuff
-    });*/
-
     // Navigation loaded
     tcg_book.loaded.navigation.then(function(toc){
         var select = document.getElementById("tcg_toc");
