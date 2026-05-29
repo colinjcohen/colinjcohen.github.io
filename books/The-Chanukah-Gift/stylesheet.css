@@ -62,14 +62,14 @@
   page-break-after: avoid;
   page-break-inside: avoid;
   text-indent: 0;
-  margin: 0 0 0 25.2pt;
+  margin: 0 0 0 18pt;
   padding: 0;
 }
 .block_8 {
   display: block;
   line-height: 1.5;
   text-indent: 0;
-  margin: 12pt 0 12pt 25.2pt;
+  margin: 12pt 0;
   padding: 0;
 }
 .block_9 {
@@ -97,30 +97,13 @@
 }
 .block_12 {
   display: block;
+  font-style: italic;
   line-height: 1.5;
   text-indent: 0;
-  margin: 0 0 0 25.2pt;
+  margin: 0 0 0 18pt;
   padding: 0;
 }
 .block_13 {
-  display: block;
-  font-style: italic;
-  line-height: 1.5;
-  text-indent: 0;
-  margin: 0 0 0 36pt;
-  padding: 0;
-}
-.block_14 {
-  display: block;
-  font-style: italic;
-  line-height: 1.5;
-  page-break-after: avoid;
-  page-break-inside: avoid;
-  text-indent: 0;
-  margin: 0 0 0 36pt;
-  padding: 0;
-}
-.block_15 {
   display: block;
   font-family: serif;
   font-size: 0.75em;
@@ -128,51 +111,43 @@
   page-break-after: avoid;
   page-break-inside: avoid;
   text-indent: 0;
-  margin: 0 0 0 25.2pt;
+  margin: 0 0 0 18pt;
+  padding: 0;
+}
+.block_14 {
+  display: block;
+  font-family: serif;
+  font-size: 0.75em;
+  line-height: 1.5;
+  text-indent: 0;
+  margin: 0 0 0 18pt;
+  padding: 0;
+}
+.block_15 {
+  display: block;
+  line-height: 1.5;
+  text-indent: 0;
+  margin: 0 0 0 18pt;
   padding: 0;
 }
 .block_16 {
   display: block;
   font-style: italic;
   line-height: 1.5;
+  text-align: center;
   text-indent: 0;
-  margin: 0 0 0 25.2pt;
+  margin: 0;
   padding: 0;
 }
 .block_17 {
   display: block;
-  font-family: serif;
-  font-size: 0.75em;
   line-height: 1.5;
+  text-align: center;
   text-indent: 0;
-  margin: 0 0 0 25.2pt;
+  margin: 0;
   padding: 0;
 }
 .block_18 {
-  display: block;
-  line-height: 1.5;
-  text-indent: 0;
-  margin: 0 0 0 36pt;
-  padding: 0;
-}
-.block_19 {
-  display: block;
-  font-style: italic;
-  line-height: 1.5;
-  text-align: center;
-  text-indent: 0;
-  margin: 0;
-  padding: 0;
-}
-.block_20 {
-  display: block;
-  line-height: 1.5;
-  text-align: center;
-  text-indent: 0;
-  margin: 0;
-  padding: 0;
-}
-.block_21 {
   display: block;
   font-size: 0.83333em;
   line-height: 1.5;
@@ -181,7 +156,7 @@
   margin: 0;
   padding: 0;
 }
-.block_22 {
+.block_19 {
   color: #000;
   display: block;
   font-size: 2em;
@@ -192,7 +167,7 @@
   margin: 48pt 0;
   padding: 0;
 }
-.block_23 {
+.block_20 {
   display: block;
   font-family: serif;
   font-size: 0.75em;
@@ -214,27 +189,31 @@
   line-height: 1.2;
 }
 .calibre2 {
+  line-height: 1.2;
+  text-decoration: none;
+}
+.calibre3 {
   font-weight: bold;
   line-height: 1.2;
 }
-.calibre3 {
+.calibre4 {
   font-style: italic;
 }
-.calibre4 {
-  height: 67.7pt;
+.calibre5 {
+  height: 63.8pt;
   width: 370pt;
 }
-.calibre5 {
+.calibre6 {
   height: 142pt;
   width: 306pt;
 }
-.calibre6 {
+.calibre7 {
   height: 375pt;
   width: 360pt;
 }
-.calibre7 {
-  height: 314pt;
-  width: 432pt;
+.calibre8 {
+  height: 288pt;
+  width: 396pt;
 }
 .text_ {
   color: #0563C1;
