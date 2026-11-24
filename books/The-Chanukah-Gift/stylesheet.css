@@ -227,6 +227,9 @@
   width: 360pt;
 }
 .calibre7 {
+  white-space: pre-wrap;
+}
+.calibre8 {
   height: 288pt;
   width: 396pt;
 }
